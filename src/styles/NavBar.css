@@ -17,3 +17,8 @@
     padding: 25px;
     display: inline-block;
 }
+
+.navbar-links-item > * {
+    text-decoration: none;
+    color: black;
+}
