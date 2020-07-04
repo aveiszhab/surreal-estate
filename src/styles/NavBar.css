@@ -1,0 +1,19 @@
+.navbar{
+    background-color: white;
+    border-bottom: 1px solid grey;;
+}
+.navbar-logo{
+    max-width: 15%;
+}
+
+.navbar-links{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.navbar-links-item{
+    margin: 0;
+    padding: 25px;
+    display: inline-block;
+}
