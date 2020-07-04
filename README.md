@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Surreal Estate
 
-## Available Scripts
+It is a React property search engine that will have multiple pages:
 
-In the project directory, you can run:
+* A listings page where you can search for different properties and sort/filter the results.
 
-### `npm start`
+* An add property page where you will add new properties.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* A property page.
+# Deployment
+App was deployed on GitHub pages
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+TBC
 
-### `npm test`
+# Screenhots
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Mobile
 
-### `npm run build`
+![Mobile screenshot](./src/ScreenShot_Mobile.jpg) TBC
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Desktop
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![Desktop screenshot](./src/Screenshot_Desktop.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Development utilities used:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* The App was built using REACT - TBC
+* Testing: Jest, React Testing Library _TBC
+* Packages: Axios, PropTypes _TBC
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# To run the App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Clone the repo:
+git clone 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* Open the app on localhost:
+npm start 
 
-## Learn More
+* Start searching for space images by typing in search keywords into the textbox
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Possible improvements:
+* TBC
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Author:
+Aniko Veiszhab
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
