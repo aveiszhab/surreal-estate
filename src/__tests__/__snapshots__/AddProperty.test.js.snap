@@ -1,19 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddProperty renders correctly to match the NavBar snapshot 1`] = `
+exports[`AddProperty renders correctly to match the AddProperty snapshot 1`] = `
 <DocumentFragment>
   <div
     class="AddProperty"
   >
     <form>
       <div
-        class="title-input"
+        class="title"
       >
         <label
+          class="label"
           for="title"
         >
           Title:
           <input
+            class="input"
             id="title"
             name="title"
             placeholder="Property tagline"
@@ -26,10 +28,12 @@ exports[`AddProperty renders correctly to match the NavBar snapshot 1`] = `
         class="city-select"
       >
         <label
+          class="label"
           for="city"
         >
           Location:
           <select
+            class="select"
             id="city"
             name="city"
           >
@@ -60,10 +64,12 @@ exports[`AddProperty renders correctly to match the NavBar snapshot 1`] = `
         class="type-select"
       >
         <label
+          class="label"
           for="type"
         >
           Property type:
           <select
+            class="select"
             id="type"
             name="type"
           >
@@ -106,13 +112,15 @@ exports[`AddProperty renders correctly to match the NavBar snapshot 1`] = `
         </label>
       </div>
       <div
-        class="bedrooms-input"
+        class="bedrooms"
       >
         <label
+          class="label"
           for="bedrooms"
         >
           Number of Bedrooms:
           <input
+            class="input"
             id="bedrooms"
             name="bedrooms"
             placeholder="Number of bedrooms"
@@ -122,13 +130,15 @@ exports[`AddProperty renders correctly to match the NavBar snapshot 1`] = `
         </label>
       </div>
       <div
-        class="bathrooms-input"
+        class="bathrooms"
       >
         <label
+          class="label"
           for="bathrooms"
         >
           Number of Bathrooms:
           <input
+            class="input"
             id="bathrooms"
             name="bathrooms"
             placeholder="Number of bathrooms"
@@ -138,13 +148,15 @@ exports[`AddProperty renders correctly to match the NavBar snapshot 1`] = `
         </label>
       </div>
       <div
-        class="price-input"
+        class="price"
       >
         <label
+          class="label"
           for="price"
         >
           Price:
           <input
+            class="input"
             id="price"
             name="price"
             placeholder="Price of the property"
@@ -154,13 +166,15 @@ exports[`AddProperty renders correctly to match the NavBar snapshot 1`] = `
         </label>
       </div>
       <div
-        class="email-input"
+        class="email"
       >
         <label
+          class="label"
           for="email"
         >
           Contact email address:
           <input
+            class="input"
             id="email"
             name="email"
             placeholder="e.g: john.smith@email.co.uk"
@@ -170,6 +184,7 @@ exports[`AddProperty renders correctly to match the NavBar snapshot 1`] = `
         </label>
       </div>
       <button
+        class="add-button"
         type="submit"
       >
         Add

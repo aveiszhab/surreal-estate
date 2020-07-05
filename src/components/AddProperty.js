@@ -28,10 +28,11 @@ const AddProperty = () => {
   return (
     <div className="AddProperty">
       <form onSubmit={handleAddProperty}>
-        <div className="title-input">
-          <label htmlFor="title">
+        <div className="title">
+          <label className="label" htmlFor="title">
             Title:
             <input
+              className="input"
               type="text"
               placeholder="Property tagline"
               id="title"
@@ -43,9 +44,10 @@ const AddProperty = () => {
         </div>
 
         <div className="city-select">
-          <label htmlFor="city">
+          <label className="label" htmlFor="city">
             Location:
             <select
+              className="select"
               id="city"
               name="city"
               value={fields.city}
@@ -60,9 +62,10 @@ const AddProperty = () => {
         </div>
 
         <div className="type-select">
-          <label htmlFor="type">
+          <label className="label" htmlFor="type">
             Property type:
             <select
+              className="select"
               id="type"
               name="type"
               value={fields.type}
@@ -79,10 +82,11 @@ const AddProperty = () => {
           </label>
         </div>
 
-        <div className="bedrooms-input">
-          <label htmlFor="bedrooms">
+        <div className="bedrooms">
+          <label className="label" htmlFor="bedrooms">
             Number of Bedrooms:
             <input
+              className="input"
               type="number"
               placeholder="Number of bedrooms"
               id="bedrooms"
@@ -93,10 +97,11 @@ const AddProperty = () => {
           </label>
         </div>
 
-        <div className="bathrooms-input">
-          <label htmlFor="bathrooms">
+        <div className="bathrooms">
+          <label className="label" htmlFor="bathrooms">
             Number of Bathrooms:
             <input
+              className="input"
               type="number"
               placeholder="Number of bathrooms"
               id="bathrooms"
@@ -107,10 +112,11 @@ const AddProperty = () => {
           </label>
         </div>
 
-        <div className="price-input">
-          <label htmlFor="price">
+        <div className="price">
+          <label className="label" htmlFor="price">
             Price:
             <input
+              className="input"
               type="number"
               placeholder="Price of the property"
               id="price"
@@ -121,10 +127,11 @@ const AddProperty = () => {
           </label>
         </div>
 
-        <div className="email-input">
-          <label htmlFor="email">
+        <div className="email">
+          <label className="label" htmlFor="email">
             Contact email address:
             <input
+              className="input"
               type="email"
               placeholder="e.g: john.smith@email.co.uk"
               id="email"
@@ -135,7 +142,9 @@ const AddProperty = () => {
           </label>
         </div>
 
-        <button type="submit">Add</button>
+        <button className="add-button" type="submit">
+          Add
+        </button>
       </form>
     </div>
   );
