@@ -1,3 +1,47 @@
 .AddProperty {
-    padding: 2%;
+    padding:2% 25%;
+
+}
+
+.input,.select {
+    width: 100%;
+    border: 1px solid rgb(9, 32, 2);
+    margin: 0.5% 1% 2% 1%;
+    padding: 1%;
+    box-sizing: border-box;
+    font-weight: 600;
+    background-color: white;
+}
+
+button[type=submit] {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid rgb(9, 32, 2);
+    cursor: pointer;
+    padding: 2% 5%;
+    font-weight: 600;
+    margin-left: 1%;
+  }
+
+.label{
+    padding: 1%;
+}
+
+button[type=submit]:hover {
+    background-color: grey;
+  }
+
+::placeholder {
+    color: rgb(9, 32, 2);
+}
+@media only screen and (max-width: 768px) {
+    [class*="input"]{
+        width: 100%;    
+    }
+    [class*="select"]{
+        width: 100%;    
+    }
+    [class*="AddProperty"]{
+        padding:2% 10%;
+    }
 }
