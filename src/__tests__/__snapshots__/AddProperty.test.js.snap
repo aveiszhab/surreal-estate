@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddProperty renders correctly to match the NavBar snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="AddProperty"
+  >
+    <form>
+      <div
+        class="title-input"
+      >
+        <label
+          for="title"
+        >
+          Title:
+          <input
+            id="title"
+            name="title"
+            placeholder="Property tagline"
+            type="text"
+            value=""
+          />
+        </label>
+      </div>
+      <div
+        class="city-select"
+      >
+        <label
+          for="city"
+        >
+          Location:
+          <select
+            id="city"
+            name="city"
+          >
+            <option
+              value="Manchester"
+            >
+              Manchester
+            </option>
+            <option
+              value="Leeds"
+            >
+              Leeds
+            </option>
+            <option
+              value="Sheffield"
+            >
+              Sheffield
+            </option>
+            <option
+              value="Liverpool"
+            >
+              Liverpool
+            </option>
+          </select>
+        </label>
+      </div>
+      <div
+        class="type-select"
+      >
+        <label
+          for="type"
+        >
+          Property type:
+          <select
+            id="type"
+            name="type"
+          >
+            <option
+              value="Flat"
+            >
+              Flat
+            </option>
+            <option
+              value="Detached"
+            >
+              Detached
+            </option>
+            <option
+              value="Semi-Detached"
+            >
+              Semi-Detached
+            </option>
+            <option
+              value="Terraced"
+            >
+              Terraced
+            </option>
+            <option
+              value="End of Terrace"
+            >
+              End of Terrace
+            </option>
+            <option
+              value="Cottage"
+            >
+              Cottage
+            </option>
+            <option
+              value="Bungalow"
+            >
+              Bungalow
+            </option>
+          </select>
+        </label>
+      </div>
+      <div
+        class="bedrooms-input"
+      >
+        <label
+          for="bedrooms"
+        >
+          Number of Bedrooms:
+          <input
+            id="bedrooms"
+            name="bedrooms"
+            placeholder="Number of bedrooms"
+            type="number"
+            value="0"
+          />
+        </label>
+      </div>
+      <div
+        class="bathrooms-input"
+      >
+        <label
+          for="bathrooms"
+        >
+          Number of Bathrooms:
+          <input
+            id="bathrooms"
+            name="bathrooms"
+            placeholder="Number of bathrooms"
+            type="number"
+            value="0"
+          />
+        </label>
+      </div>
+      <div
+        class="price-input"
+      >
+        <label
+          for="price"
+        >
+          Price:
+          <input
+            id="price"
+            name="price"
+            placeholder="Price of the property"
+            type="number"
+            value="0"
+          />
+        </label>
+      </div>
+      <div
+        class="email-input"
+      >
+        <label
+          for="email"
+        >
+          Contact email address:
+          <input
+            id="email"
+            name="email"
+            placeholder="e.g: john.smith@email.co.uk"
+            type="email"
+            value=""
+          />
+        </label>
+      </div>
+      <button
+        type="submit"
+      >
+        Add
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
