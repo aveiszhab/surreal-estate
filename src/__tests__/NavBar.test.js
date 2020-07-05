@@ -1,54 +1,58 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { render } from "@testing-library/react";
+import { MemoryRouter as Router } from "react-router-dom";
 import NavBar from "../components/NavBar";
 
 describe("NavBar", () => {
-  it("renders correctly to match the NavBar snapshot", () => {
-    const { asFragment } = render(
+  const setUp = () => {
+    const { asFragment, getByRole } = render(
       <Router>
         <NavBar />
       </Router>
     );
 
-    expect(asFragment()).toMatchSnapshot();
+    return {
+      asFragment: asFragment(),
+      logo: getByRole("img", { name: /logo/i }),
+      linkToProperties: getByRole("link", {
+        name: /View Properties/i,
+      }),
+      linkToAddProperty: getByRole("link", {
+        name: /Add Property/i,
+      }),
+    };
+  };
+
+  let renderedComponent;
+
+  beforeEach(() => {
+    renderedComponent = setUp();
+  });
+
+  it("renders correctly to match the NavBar snapshot", () => {
+    expect(renderedComponent.asFragment).toMatchSnapshot();
   });
 
   it("renders logo correctly", () => {
-    render(
-      <Router>
-        <NavBar />
-      </Router>
+    expect(renderedComponent.logo).toHaveClass("navbar-logo");
+    expect(renderedComponent.logo).toHaveAttribute(
+      "src",
+      expect.stringContaining("surreal")
     );
-
-    const logo = screen.getByRole("img", { name: /logo/i });
-
-    expect(logo).toHaveClass("navbar-logo");
-    expect(logo).toHaveAttribute("src", expect.stringContaining("surreal"));
-    expect(logo).toHaveAttribute("alt", expect.stringContaining("logo"));
+    expect(renderedComponent.logo).toHaveAttribute(
+      "alt",
+      expect.stringContaining("logo")
+    );
   });
 
   it("renders properties link properly", () => {
-    render(
-      <Router>
-        <NavBar />
-      </Router>
-    );
-
-    const logo = screen.getByRole("link", { name: /View Properties/i });
-
-    expect(logo).toHaveAttribute("href", "/");
+    expect(renderedComponent.linkToProperties).toHaveAttribute("href", "/");
   });
 
   it("renders add property link properly", () => {
-    render(
-      <Router>
-        <NavBar />
-      </Router>
+    expect(renderedComponent.linkToAddProperty).toHaveAttribute(
+      "href",
+      "/add-property"
     );
-
-    const logo = screen.getByRole("link", { name: /Add Property/i });
-
-    expect(logo).toHaveAttribute("href", "/add-property");
   });
 });
