@@ -1,0 +1,51 @@
+.property-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.logo-container{
+   background-color: ivory;
+   padding: 0%;
+
+}
+
+.logo{
+    width:10%;
+    align-self: center;
+}
+
+.title{
+    padding: 2% 2% 0% 2%;
+    font-weight: 800;
+}
+
+.city-type {
+    padding: 2% 2% 0% 2%;
+    font-style: italic;
+}
+
+.bedrooms,.bathrooms{
+    padding: 2% 2% 0% 2%;
+}
+
+.price{
+    padding: 2%;
+    font-style: bold;
+    font-weight: 800;
+}
+
+.email{  
+    background-color: rgb(5, 107, 5);
+    align-items: center;
+}
+
+#iconId{
+    color: chartreuse;  
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 8%;
+}
+

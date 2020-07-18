@@ -39,7 +39,7 @@ const AddProperty = () => {
       <Alert message={alert.message} success={alert.isSuccess} />
       <div className="AddProperty">
         <form onSubmit={handleAddProperty}>
-          <div className="title">
+          <div className="add-title">
             <label className="label" htmlFor="title">
               Title:
               <input
@@ -93,7 +93,7 @@ const AddProperty = () => {
             </label>
           </div>
 
-          <div className="bedrooms">
+          <div className="add-bedrooms">
             <label className="label" htmlFor="bedrooms">
               Number of Bedrooms:
               <input
@@ -108,7 +108,7 @@ const AddProperty = () => {
             </label>
           </div>
 
-          <div className="bathrooms">
+          <div className="add-bathrooms">
             <label className="label" htmlFor="bathrooms">
               Number of Bathrooms:
               <input
@@ -123,7 +123,7 @@ const AddProperty = () => {
             </label>
           </div>
 
-          <div className="price">
+          <div className="add-price">
             <label className="label" htmlFor="price">
               Price:
               <input
@@ -138,7 +138,7 @@ const AddProperty = () => {
             </label>
           </div>
 
-          <div className="email">
+          <div className="add-email">
             <label className="label" htmlFor="email">
               Contact email address:
               <input
