@@ -1,17 +1,23 @@
-.property-card{
-    width: 100%;
+.property-cards{
+    min-width: 30%;
     display: flex;
     flex-direction: column;
+    padding: 1%;
+    margin: 0.5%;
+    border: solid 1px rgb(5, 107, 5);
+    flex:1 1 30%;
+    justify-content: space-around;
+    
 }
 .logo-container{
    background-color: ivory;
    padding: 0%;
-
+   display: flex;
+   justify-content: center;
 }
 
 .logo{
-    width:10%;
-    align-self: center;
+    width:15%;
 }
 
 .title{
@@ -34,18 +40,18 @@
     font-weight: 800;
 }
 
-.email{  
+.email{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
     background-color: rgb(5, 107, 5);
-    align-items: center;
+    flex-wrap: nowrap;
 }
 
 #iconId{
     color: chartreuse;  
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: 8%;
+a {
+     margin-right: 1%;
 }
-

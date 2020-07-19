@@ -35,6 +35,10 @@ describe("PropertyCard", () => {
     renderedComponent = setUp();
   });
 
+  it("to match the PropertyCard snapshot", () => {
+    expect(renderedComponent.asFragment).toMatchSnapshot();
+  });
+
   it("renders correctly", () => {
     expect(renderedComponent.title).toHaveTextContent(
       "2 bedroom period property"

@@ -22,5 +22,15 @@ const postProperty = (data, setAlert) => {
     );
 };
 
-// eslint-disable-next-line import/prefer-default-export
-export { postProperty };
+const listProperty = (setProperties, setAlert) => {
+  return axios({
+    method: "get",
+    url: `${url}/propertyListing`,
+  })
+    .then(({ data }) => setProperties(data))
+    .catch(() =>
+      setAlert({ message: "Server error. Please try again later." })
+    );
+};
+
+export { postProperty, listProperty };

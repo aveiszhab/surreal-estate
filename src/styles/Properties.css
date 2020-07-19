@@ -1,0 +1,7 @@
+.properties {
+    padding: 2%;
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+

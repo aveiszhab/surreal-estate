@@ -7,7 +7,7 @@ exports[`AddProperty renders correctly to match the AddProperty snapshot 1`] = `
   >
     <form>
       <div
-        class="title"
+        class="add-title"
       >
         <label
           class="label"
@@ -112,7 +112,7 @@ exports[`AddProperty renders correctly to match the AddProperty snapshot 1`] = `
         </label>
       </div>
       <div
-        class="bedrooms"
+        class="add-bedrooms"
       >
         <label
           class="label"
@@ -130,7 +130,7 @@ exports[`AddProperty renders correctly to match the AddProperty snapshot 1`] = `
         </label>
       </div>
       <div
-        class="bathrooms"
+        class="add-bathrooms"
       >
         <label
           class="label"
@@ -148,7 +148,7 @@ exports[`AddProperty renders correctly to match the AddProperty snapshot 1`] = `
         </label>
       </div>
       <div
-        class="price"
+        class="add-price"
       >
         <label
           class="label"
@@ -166,7 +166,7 @@ exports[`AddProperty renders correctly to match the AddProperty snapshot 1`] = `
         </label>
       </div>
       <div
-        class="email"
+        class="add-email"
       >
         <label
           class="label"

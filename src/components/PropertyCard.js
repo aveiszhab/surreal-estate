@@ -20,7 +20,7 @@ const PropertyCard = ({
   email,
 }) => {
   return (
-    <div className="property-card">
+    <div className="property-cards">
       <div className="property-card logo-container">
         <img className="property-card logo" src={MyLogo} alt="logo" />
       </div>
@@ -45,12 +45,10 @@ const PropertyCard = ({
         </span>
       </div>
       <div className="property-card email">
-        <span className="container">
-          <a href={`mailto:${email}`}>
-            <FontAwesomeIcon id="iconId" icon={faEnvelope} />
-          </a>
-          Email
-        </span>
+        <a href={`mailto:${email}`}>
+          <FontAwesomeIcon id="iconId" icon={faEnvelope} />
+        </a>
+        Email
       </div>
     </div>
   );
@@ -60,9 +58,9 @@ PropertyCard.propTypes = {
   title: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   city: PropTypes.string.isRequired,
-  bathrooms: PropTypes.number.isRequired,
-  bedrooms: PropTypes.number.isRequired,
-  price: PropTypes.number.isRequired,
+  bathrooms: PropTypes.string.isRequired,
+  bedrooms: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
   email: PropTypes.string.isRequired,
 };
 export default PropertyCard;

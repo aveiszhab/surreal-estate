@@ -1,20 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import PropertyCard from "./PropertyCard";
-
-const props = {
-  title: "2 bedroom period property",
-  type: "flat",
-  bathrooms: 2,
-  bedrooms: 2,
-  price: 2500000,
-  city: "Leeds",
-  email: "j.d.Smith@gmail.com",
-};
+import { listProperty } from "../requests/requests";
+import Alert from "./Alert";
+import "../styles/Properties.css";
 
 const Properties = () => {
+  const initialState = {
+    properties: [],
+    alert: {
+      message: "",
+      success: false,
+    },
+  };
+
+  const [properties, setProperties] = useState(initialState.properties);
+  const [alert, setAlert] = useState(initialState.alert);
+
+  useEffect(() => {
+    setAlert({ message: "", isSuccess: false });
+    listProperty(setProperties, setAlert);
+  }, []);
+
   return (
-    <div>
-      <PropertyCard {...props} />
+    <div className="properties">
+      <Alert message={alert.message} success={alert.isSuccess} />
+      {properties.map((property) => (
+        <PropertyCard key={property._id} {...property} />
+      ))}
     </div>
   );
 };
