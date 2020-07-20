@@ -3,6 +3,11 @@ import { render } from "@testing-library/react";
 import Alert from "../components/Alert";
 
 describe("Alert", () => {
+  it("renders correctly to match the Alert snapshot", () => {
+    const { asFragment } = render(<Alert />);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
   it("displays an error message", () => {
     const { getByText, asFragment } = render(<Alert message="Error!" />);
     expect(getByText(/error/i).textContent).toContain("Error");

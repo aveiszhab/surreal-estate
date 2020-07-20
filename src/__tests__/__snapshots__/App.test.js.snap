@@ -47,7 +47,7 @@ exports[`App renders correctly to match the App snapshot 1`] = `
       >
         <div>
           <h2>
-            Filter by city
+            Filter by City
           </h2>
           <div
             class="sidebar-links"

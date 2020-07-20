@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/SideBar.css";
 import { Link, useLocation } from "react-router-dom";
 import qs from "qs";
@@ -20,7 +20,7 @@ const SideBar = () => {
   };
   return (
     <div>
-      <h2>Filter by city</h2>
+      <h2>Filter by City</h2>
       <div className="sidebar-links">
         <div className="sidebar-links-items">
           <Link to={buildQueryString("query", { city: "Manchester" })}>

@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideBar renders correctly to match the SideBar snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <h2>
+      Filter by City
+    </h2>
+    <div
+      class="sidebar-links"
+    >
+      <div
+        class="sidebar-links-items"
+      >
+        <a
+          href="/?query={\\"city\\":\\"Manchester\\"}"
+        >
+          Manchester
+        </a>
+      </div>
+      <div
+        class="sidebar-links-items"
+      >
+        <a
+          href="/?query={\\"city\\":\\"Leeds\\"}"
+        >
+          Leeds
+        </a>
+      </div>
+      <div
+        class="sidebar-links-items"
+      >
+        <a
+          href="/?query={\\"city\\":\\"Sheffield\\"}"
+        >
+          Sheffield
+        </a>
+      </div>
+      <div
+        class="sidebar-links-items"
+      >
+        <a
+          href="/?query={\\"city\\":\\"Liverpool\\"}"
+        >
+          Liverpool
+        </a>
+      </div>
+    </div>
+    <h2>
+      Sort by Price
+    </h2>
+    <div
+      class="sidebar-links"
+    >
+      <div
+        class="sidebar-links-items"
+      >
+        <a
+          href="/?sort={\\"price\\":1}"
+        >
+          Price Ascending
+        </a>
+      </div>
+      <div
+        class="sidebar-links-items"
+      >
+        <a
+          href="/?sort={\\"price\\":-1}"
+        >
+          Price Descending
+        </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

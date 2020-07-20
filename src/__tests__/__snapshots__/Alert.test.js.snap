@@ -21,3 +21,5 @@ exports[`Alert displays an error message 1`] = `
 `;
 
 exports[`Alert does not render component if there is no message 1`] = `<DocumentFragment />`;
+
+exports[`Alert renders correctly to match the Alert snapshot 1`] = `<DocumentFragment />`;
