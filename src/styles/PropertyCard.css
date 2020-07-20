@@ -1,5 +1,5 @@
 .property-cards{
-    min-width: 30%;
+    max-width: 30%;
     display: flex;
     flex-direction: column;
     padding: 1%;
@@ -7,6 +7,7 @@
     border: solid 1px rgb(5, 107, 5);
     flex:1 1 30%;
     justify-content: space-around;
+
     
 }
 .logo-container{
@@ -54,4 +55,18 @@
 
 a {
      margin-right: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="property-cards"]{
+        flex:1 1 50%; 
+        max-width: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    [class*="property-cards"]{
+        flex:1 1 100%; 
+        max-width: 95%;
+    }
 }

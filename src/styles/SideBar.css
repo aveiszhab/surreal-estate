@@ -1,0 +1,15 @@
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sidebar-links-items {
+    padding: 5px 0%;
+}
+
+
+.sidebar-links-items > * {
+    text-decoration: none;
+    color: ivory;
+}

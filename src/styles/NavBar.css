@@ -1,9 +1,8 @@
 .navbar{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    border-bottom: 1px solid grey;
-    justify-content: flex-start;
     align-items: center;
 }
 
@@ -21,19 +20,19 @@ h2 {
     list-style: none;
     display: flex;
     flex-wrap: nowrap;
-    flex:1 2 20%;
+    flex:1;
+    margin: 0px;
     justify-content: center ;
+    padding-inline-start: 0px;
 }
 
 .navbar-links-item {
-    padding: 0% 5%;
+    padding: 0% 4%;
     font-weight: 800;
     text-align: center;
-    white-space: nowrap;
 }
 .navbar-links-item :hover {
-    color: rgb(16, 58, 16);
-    text-shadow:1px 0.5px rgb(204, 235, 174);
+    color: rgb(16, 58, 16)
 }
 
 .navbar-links-item > * {
@@ -41,4 +40,8 @@ h2 {
     color: black;
 }
 
-
+@media only screen and (max-width: 600px) {
+    [class*="navbar-logo"]{
+        width: 20%
+    }
+}

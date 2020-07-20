@@ -33,4 +33,15 @@ const listProperty = (setProperties, setAlert) => {
     );
 };
 
-export { postProperty, listProperty };
+const filterProperties = (search, setProperties, setAlert) => {
+  return axios({
+    method: "get",
+    url: `${url}/propertyListing${search}`,
+  })
+    .then(({ data }) => setProperties(data))
+    .catch(() =>
+      setAlert({ message: "Server error. Please try again later." })
+    );
+};
+
+export { postProperty, listProperty, filterProperties };

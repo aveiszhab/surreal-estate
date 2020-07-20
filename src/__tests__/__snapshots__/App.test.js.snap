@@ -11,8 +11,11 @@ exports[`App renders correctly to match the App snapshot 1`] = `
       <img
         alt="logo"
         class="navbar-logo"
-        src="https://mcrcodes.s3.eu-west-2.amazonaws.com/course/surreal-estate/logo.png"
+        src="MyLogo.png"
       />
+      <h2>
+        Surreal Estate
+      </h2>
       <ul
         class="navbar-links"
       >
@@ -36,7 +39,87 @@ exports[`App renders correctly to match the App snapshot 1`] = `
         </li>
       </ul>
     </div>
-    <div />
+    <div
+      class="full-page"
+    >
+      <div
+        class="sidebar"
+      >
+        <div>
+          <h2>
+            Filter by city
+          </h2>
+          <div
+            class="sidebar-links"
+          >
+            <div
+              class="sidebar-links-items"
+            >
+              <a
+                href="/?query={\\"city\\":\\"Manchester\\"}"
+              >
+                Manchester
+              </a>
+            </div>
+            <div
+              class="sidebar-links-items"
+            >
+              <a
+                href="/?query={\\"city\\":\\"Leeds\\"}"
+              >
+                Leeds
+              </a>
+            </div>
+            <div
+              class="sidebar-links-items"
+            >
+              <a
+                href="/?query={\\"city\\":\\"Sheffield\\"}"
+              >
+                Sheffield
+              </a>
+            </div>
+            <div
+              class="sidebar-links-items"
+            >
+              <a
+                href="/?query={\\"city\\":\\"Liverpool\\"}"
+              >
+                Liverpool
+              </a>
+            </div>
+          </div>
+          <h2>
+            Sort by Price
+          </h2>
+          <div
+            class="sidebar-links"
+          >
+            <div
+              class="sidebar-links-items"
+            >
+              <a
+                href="/?sort={\\"price\\":1}"
+              >
+                Price Ascending
+              </a>
+            </div>
+            <div
+              class="sidebar-links-items"
+            >
+              <a
+                href="/?sort={\\"price\\":-1}"
+              >
+                Price Descending
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="properties"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
