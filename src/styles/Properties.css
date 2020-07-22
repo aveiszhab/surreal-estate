@@ -1,7 +1,6 @@
 .properties {
     padding: 2%;
     display: flex;
-    gap: 5%;
     flex-wrap: wrap;
     width: 80%;
 }
@@ -13,9 +12,6 @@
 
 .sidebar {
     background-color: rgb(59, 105, 12);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     width: 20%;
 }
 
@@ -25,6 +21,7 @@
     }
     [class*='sidebar']{
         width: 100%;
+        margin: 5%
     }
     [class*='properties']{
         width: 100%;

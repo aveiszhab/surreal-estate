@@ -14,7 +14,7 @@
     background-color:ivory;
 }
 
-button[type=submit] {
+.add-button {
     background-color:ivory;
     border-radius: 8px;
     border: 1px solid rgb(9, 32, 2);
@@ -28,13 +28,15 @@ button[type=submit] {
     padding: 1%;
 }
 
-button[type=submit]:hover {
+.add-button:hover {
     background-color: rgb(19, 246, 27);
   }
 
 ::placeholder {
     color: rgb(10, 31, 10);
 }
+
+
 @media only screen and (max-width: 768px) {
     [class*="input"]{
         width: 100%;    

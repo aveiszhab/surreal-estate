@@ -1,15 +1,47 @@
 .sidebar-links {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
 }
 
 .sidebar-links-items {
+    margin-left: 5%;
     padding: 5px 0%;
-}
-
-
-.sidebar-links-items > * {
     text-decoration: none;
     color: ivory;
 }
+
+h4 {
+    margin-left: 5%;
+}
+
+.search {
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+}
+
+.search-input {
+   width: 65%;
+   padding: 6%;
+   border-radius: 8px 0px 0px 8px;
+   background-color:ivory;
+   border: 1px solid rgb(9, 32, 2);
+   font-weight: 600;
+
+}
+
+.search-button {
+    background-color:ivory;
+    border-radius: 0px 8px 8px 0px;
+    border: 1px solid rgb(9, 32, 2);
+    cursor: pointer;
+    padding: 0% 5%;
+    font-weight: 400;
+    justify-content: center;
+}
+
+
+
+
+
