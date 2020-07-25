@@ -34,17 +34,23 @@ const SideBar = () => {
     history.push(newQueryString);
   };
 
+  const handleReset = (event) => {
+    event.preventDefault();
+    history.push("/");
+  };
+
   return (
     <div>
       <h4>Search by Title</h4>
       <form className="search" onSubmit={handleSearch}>
         <input
+          title="search-input"
           className="search-input"
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-        <button type="submit" className="search-button">
+        <button type="submit" className="search-button" title="search">
           <FontAwesomeIcon icon={faSearch} />
         </button>
       </form>
@@ -95,6 +101,9 @@ const SideBar = () => {
           Price Descending
         </Link>
       </div>
+      <button type="submit" onClick={handleReset} className="reset-button">
+        Clear Filters
+      </button>
     </div>
   );
 };

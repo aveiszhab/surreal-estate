@@ -1,5 +1,6 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, wait, fireEvent } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { BrowserRouter as Router } from "react-router-dom";
 import SideBar from "../components/SideBar";
 
@@ -21,6 +22,9 @@ describe("SideBar", () => {
       liverpool: getByRole("link", { name: /liverpool/i }),
       ascending: getByRole("link", { name: /ascending/i }),
       descending: getByRole("link", { name: /descending/i }),
+      searchButton: getByRole("button", { name: /search/i }),
+      resetButton: getByRole("button", { name: /clear/i }),
+      searchInput: getByRole("textbox", { name: /search-input/i }),
     };
   };
 
@@ -72,5 +76,13 @@ describe("SideBar", () => {
       "href",
       '/?sort={"price":-1}'
     );
+
+    expect(renderedComponent.searchButton).toHaveClass("search-button");
+    expect(renderedComponent.searchButton).toBeEnabled();
+
+    expect(renderedComponent.resetButton).toHaveClass("reset-button");
+    expect(renderedComponent.resetButton).toBeEnabled();
+
+    expect(renderedComponent.searchInput).toHaveClass("search-input");
   });
 });
