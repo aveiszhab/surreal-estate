@@ -1,6 +1,5 @@
 import React from "react";
-import { render, wait, fireEvent } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
+import { render } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
 import SideBar from "../components/SideBar";
 

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:4000/api/v1";
+const url = "https://surreal-estate-db-api.herokuapp.com/api/v1";
 
 const postProperty = (data, setAlert) => {
   return axios({
