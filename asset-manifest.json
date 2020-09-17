@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/surreal-estate/static/css/main.3f488e17.chunk.css",
+    "main.js": "/surreal-estate/static/js/main.17778923.chunk.js",
+    "main.js.map": "/surreal-estate/static/js/main.17778923.chunk.js.map",
+    "runtime-main.js": "/surreal-estate/static/js/runtime-main.5d23722d.js",
+    "runtime-main.js.map": "/surreal-estate/static/js/runtime-main.5d23722d.js.map",
+    "static/js/2.a2a8ff40.chunk.js": "/surreal-estate/static/js/2.a2a8ff40.chunk.js",
+    "static/js/2.a2a8ff40.chunk.js.map": "/surreal-estate/static/js/2.a2a8ff40.chunk.js.map",
+    "index.html": "/surreal-estate/index.html",
+    "precache-manifest.b1fc4b48398face2c2018761f281967f.js": "/surreal-estate/precache-manifest.b1fc4b48398face2c2018761f281967f.js",
+    "service-worker.js": "/surreal-estate/service-worker.js",
+    "static/css/main.3f488e17.chunk.css.map": "/surreal-estate/static/css/main.3f488e17.chunk.css.map",
+    "static/js/2.a2a8ff40.chunk.js.LICENSE.txt": "/surreal-estate/static/js/2.a2a8ff40.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d23722d.js",
+    "static/js/2.a2a8ff40.chunk.js",
+    "static/css/main.3f488e17.chunk.css",
+    "static/js/main.17778923.chunk.js"
+  ]
+}
