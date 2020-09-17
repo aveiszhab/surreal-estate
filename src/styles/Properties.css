@@ -1,0 +1,29 @@
+.properties {
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.full-page {
+   display: flex;
+
+}
+
+.sidebar {
+    background-color: rgb(59, 105, 12);
+    width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    [class*="full-page"]{
+        flex-wrap: wrap; 
+    }
+    [class*='sidebar']{
+        width: 100%;
+        margin: 5%
+    }
+    [class*='properties']{
+        width: 100%;
+    }
+}

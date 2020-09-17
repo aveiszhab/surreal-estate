@@ -1,0 +1,72 @@
+.property-cards{
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin: 0.5%;
+    border: solid 1px rgb(5, 107, 5);
+    flex:1 1 30%;
+    justify-content: space-around;
+
+    
+}
+.logo-container{
+   background-color: ivory;
+   padding: 0%;
+   display: flex;
+   justify-content: center;
+}
+
+.logo{
+    width:15%;
+}
+
+.title{
+    padding: 2% 2% 0% 2%;
+    font-weight: 800;
+}
+
+.city-type {
+    padding: 2% 2% 0% 2%;
+    font-style: italic;
+}
+
+.bedrooms,.bathrooms{
+    padding: 2% 2% 0% 2%;
+}
+
+.price{
+    padding: 2%;
+    font-style: bold;
+    font-weight: 800;
+}
+
+.email{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(5, 107, 5);
+    flex-wrap: nowrap;
+}
+
+#iconId{
+    color: chartreuse;  
+}
+
+a {
+     margin-right: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="property-cards"]{
+        flex:1 1 50%; 
+        max-width: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    [class*="property-cards"]{
+        flex:1 1 100%; 
+        max-width: 95%;
+    }
+}

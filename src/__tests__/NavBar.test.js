@@ -37,7 +37,7 @@ describe("NavBar", () => {
     expect(renderedComponent.logo).toHaveClass("navbar-logo");
     expect(renderedComponent.logo).toHaveAttribute(
       "src",
-      expect.stringContaining("surreal")
+      expect.stringContaining("MyLogo")
     );
     expect(renderedComponent.logo).toHaveAttribute(
       "alt",

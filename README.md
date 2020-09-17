@@ -6,7 +6,21 @@ It is a React property search engine that will have multiple pages:
 
 * An add property page where you will add new properties.
 
-* A property page.
+## Concepts to be used
+* Single Page Application (SPA)
+
+* Client-side Routing
+
+* Controlled Inputs
+
+* HTTP Requests
+
+* API Interaction
+
+* OAuth
+
+## Database 
+For this project, Manchester Codes created an API for the course. It is an CRUD REST API which interacts with a MongoDB database. The API was deployed by myself to be able to use it publicly on Heroku.
 # Deployment
 App was deployed on GitHub pages
 
@@ -20,7 +34,7 @@ TBC
 
 ## Desktop
 
-![Desktop screenshot](./src/Screenshot_Desktop.png)
+![Desktop screenshot](./src/Screenshot_Desktop.png) TBC
 
 
 # Development utilities used:
@@ -29,10 +43,10 @@ TBC
 * Testing: Jest, React Testing Library _TBC
 * Packages: Axios, PropTypes _TBC
 
-# To run the App
+# To run the App locally
 
 * Clone the repo:
-git clone 
+git clone TBC
 
 * Open the app on localhost:
 npm start 

@@ -8,8 +8,11 @@ exports[`NavBar renders correctly to match the NavBar snapshot 1`] = `
     <img
       alt="logo"
       class="navbar-logo"
-      src="https://mcrcodes.s3.eu-west-2.amazonaws.com/course/surreal-estate/logo.png"
+      src="MyLogo.png"
     />
+    <h2>
+      Surreal Estate
+    </h2>
     <ul
       class="navbar-links"
     >
